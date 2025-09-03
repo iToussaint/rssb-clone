@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.firstRotated {
+  @apply scale-85 rotate-45 bg-neutral-50
+}
+
+.thirdRotated {
+  @apply scale-85 -rotate-45 bg-neutral-50
+}
+
