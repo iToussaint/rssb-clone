@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>RSSB</title>
   </head>
-  <body class="font-['Segoe UI', Tahoma, Geneva, Verdana, sans-serif]">
+  <body class="font-['Segoe UI', Tahoma, Geneva, Verdana, sans-serif] overflow-x-hidden">
     <section>
       <div class="bg-blue-50">
         <div
@@ -231,9 +231,31 @@
     <div
       class="bg-[url('/hero-public.jpg')] bg-cover relative bg-center px-3 flex justify-end"
     >
-  
-    <img src="/hero-public.jpg" alt="">
-  </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-sky-50 via-sky-50"
+      ></div>
+
+      <div class="z-1 flex flex-2 max-w-screen-2xl pl-14">
+        <div class="flex-2/5 flex flex-col gap-y-10 justify-center items-start">
+          <div class="space-y-3">
+            <h1 class="text-3xl text-neutral-800 font-light">
+              Enjoy your
+              <span class="text-orange-400 font-semibold">Maternity Leave</span>
+              with your full salary.
+            </h1>
+            <p class="font-bold text-blue-800 text-sm">MEDICAL</p>
+          </div>
+          <button
+            class="px-12 py-4 text-neutral-50 font-bold bg-blue-900 rounded-lg hover:text-blue-950 hover:bg-neutral-50 border-2 border-transparent hover:border-blue-950"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="flex-3/5 object-none">
+          <img class="" src="/hero-pic.png" alt="" />
+        </div>
+      </div>
+    </div>
 
     <div class="bg-neutral-200 -mt-24 flex">
       <div class="mx-auto max-w-screen-lg z-1">
@@ -594,15 +616,15 @@
       </div>
     </div>
 
-    <div class="bg-neutral-200 py-20">
+    <div class="bg-neutral-200 py-28 lg:pl-10">
       <div
-        class="px-5 grid grid-cols-1 gap-32 items-center max-w-screen-xl 2xl:grid-cols-2 mx-auto overflow-visible"
+        class="px-5 flex flex-col items-center max-w-screen-2xl lg:flex-row lg:justify-between"
       >
-        <div class="flex flex-col justify-center items-start gap-y-10">
-          <h1 class="text-3xl font-bold text-blue-950 xl:text-4xl">
+        <div class="lg:col-span-5 flex flex-col justify-center items-start gap-y-10">
+          <h1 class="text-3xl font-bold text-blue-950 lg:text-4xl">
             Never miss your contributions again
           </h1>
-          <p class="text-base/loose text-neutral-800">
+          <p class="text-base/loose lg:text-lg text-neutral-800">
             <span class="font-bold text-orange-400 text-xl">Imisanzu</span>
             revolutionizes the way you manage your social security
             contributions. Access your information anytime, anywhere with ease
@@ -616,11 +638,17 @@
           </button>
         </div>
 
-        <img src="/public.jpg" alt="" />
+        <div class="">
+          <img
+            class="shadow-2xl h-auto shadow-neutral-500 rounded-lg"
+            src="/public.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
 
-    <div class="px-5 mt-20 space-y-14 max-w-screen-xl mx-auto">
+    <div class="px-5 mt-20 space-y-14 max-w-screen-lg mx-auto">
       <div class="space-y-5">
         <h1 class="text-3xl text-blue-950 font-bold">Digital transformation</h1>
         <p class="text-2xl text-neutral-700">
@@ -631,7 +659,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col gap-10 2xl:flex-row">
+      <div class="flex flex-col gap-10 lg:flex-row">
         <div class="space-y-5">
           <div class="rounded-full p-6 w-fit bg-blue-50">
             <svg
@@ -645,7 +673,7 @@
               />
             </svg>
           </div>
-          <h1 class="font-bold text-2xl text-blue-950">
+          <h1 class="font-bold text-2xl text-blue-950 lg:text-xl">
             Changing from Legacy processes and systems
           </h1>
           <p class="text-lg text-neutral-800">
@@ -669,7 +697,7 @@
               />
             </svg>
           </div>
-          <h1 class="font-bold text-2xl text-blue-950">
+          <h1 class="font-bold text-2xl text-blue-950 lg:text-xl"">
             Non-paper based processes
           </h1>
           <p class="text-lg text-neutral-800">
@@ -697,7 +725,7 @@
               />
             </svg>
           </div>
-          <h1 class="font-bold text-2xl text-blue-950">
+          <h1 class="font-bold text-2xl text-blue-950 lg:text-xl"">
             Ensure the compliance rate in mandatory contributions
           </h1>
           <p class="text-lg text-neutral-800">
@@ -710,9 +738,9 @@
       </div>
     </div>
 
-    <div class="bg-gray-50 py-20 px-5 my-16">
+    <div class="bg-gray-50 py-20 pl-16 my-16">
       <div
-        class="max-w-screen-xl mx-auto px-7 py-5 border-l-2 border-orange-300 space-y-10 text-xl"
+        class="max-w-screen-xl mx-auto pl-12 py-5 border-l-2 border-orange-300 space-y-10 text-2xl"
       >
         <p class="max-w-screen-sm">
           “We have ambitious plans to transform RSSB, by 2025, into an
@@ -741,15 +769,15 @@
       </div>
     </div>
 
-    <div class="flex flex-col items-center max-w-screen-xl mx-auto">
+    <div class="flex flex-col px-10 items-center max-w-screen-xl mx-auto">
       <h1
         class="text-2xl font-bold text-blue-900 my-16 flex items-center justify-center gap-x-2"
       >
         <span class="h-1 w-8 flex bg-orange-400"></span> NEWS & EVENTS
       </h1>
 
-      <div class="flex flex-col 2xl:flex-row">
-        <div class="m-5 group space-y-5 cursor-pointer">
+      <div class="flex flex-col gap-5 xl:flex-row">
+        <div class="group space-y-5 cursor-pointer">
           <div class="aspect-video overflow-hidden">
             <div
               class="bg-[url('/news-public.jpg')] h-full w-full bg-center bg-cover group-hover:scale-110 transition-all duration-700 ease-in-out"
@@ -772,7 +800,7 @@
             </div>
           </div>
         </div>
-        <div class="m-5 group space-y-5 cursor-pointer">
+        <div class="group space-y-5 cursor-pointer">
           <div class="aspect-video overflow-hidden">
             <div
               class="bg-[url('/public2.jpg')] h-full w-full bg-center bg-cover group-hover:scale-110 transition-all duration-700 ease-in-out"
@@ -795,7 +823,7 @@
             </div>
           </div>
         </div>
-        <div class="m-5 group space-y-5 cursor-pointer">
+        <div class="group space-y-5 cursor-pointer">
           <div class="aspect-video overflow-hidden">
             <div
               class="bg-[url('/public3.jpg')] h-full w-full bg-center bg-cover group-hover:scale-110 transition-all duration-700 ease-in-out"
