@@ -9,10 +9,12 @@ const second = document.getElementById("second")
 const third = document.getElementById("third")
 
 
+
 hamburger.addEventListener("click", () =>{
     first.classList.toggle("firstRotated")
     second.classList.toggle("opacity-0")
     third.classList.toggle('thirdRotated')
-    navItems.classList.toggle("top-0")
+    navItems.classList.toggle("navItemsRevealed")
+    document.body.classList.toggle("overflow-y-hidden")
 })
 

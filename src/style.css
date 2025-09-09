@@ -8,3 +8,8 @@
   @apply scale-85 -rotate-45 bg-neutral-50
 }
 
+
+
+.navItemsRevealed{
+  @apply top-0 h-screen
+}
